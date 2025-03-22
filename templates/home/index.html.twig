@@ -1,20 +1,17 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello HomeController!{% endblock %}
+{% block title %}Bienvenue
+{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+	<div class="container text-center mt-5">
+		<h1 class="display-4">Bienvenue sur notre site d'inscription 🎉</h1>
+		<p class="lead mt-4">
+			Remplissez notre formulaire simple et rapide pour rejoindre notre communauté !
+		</p>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
-
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code>C:/xampp/htdocs/SYMFONY/formulaire/src/Controller/HomeController.php</code></li>
-        <li>Your template at <code>C:/xampp/htdocs/SYMFONY/formulaire/templates/home/index.html.twig</code></li>
-    </ul>
-</div>
+		<a href="{{ path('app_register') }}" class="btn btn-lg btn-success mt-3">
+			👉 S'inscrire maintenant
+		</a>
+	</div>
 {% endblock %}
